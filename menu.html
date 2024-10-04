@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen2Roman Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function switchLanguage(language) {
+            document.getElementById('englishMenu').style.display = (language === 'en') ? 'block' : 'none';
+            document.getElementById('spanishMenu').style.display = (language === 'es') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Ramen2Roman Logo" width="150px">
+        <h1>Ramen2Roman Menu</h1>
+        <div class="language-toggle">
+            <button onclick="switchLanguage('en')">English</button> | 
+            <button onclick="switchLanguage('es')">Español</button>
+        </div>
+    </header>
+
+    <!-- English Menu -->
+    <div id="englishMenu" style="display: block;">
+        <section>
+            <h2>Main Course</h2>
+            <ul>
+                <li>Tonkotsu Carbonara - $18</li>
+                <li>Shoyu Roman Pizza - $20</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Spanish Menu -->
+    <div id="spanishMenu" style="display: none;">
+        <section>
+            <h2>Plato Principal</h2>
+            <ul>
+                <li>Tonkotsu Carbonara - $18</li>
+                <li>Pizza Shoyu Romana - $20</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Ramen2Roman</p>
+    </footer>
+</body>
+</html>

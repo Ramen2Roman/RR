@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen2Roman</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function switchLanguage(language) {
+            document.getElementById('englishContent').style.display = (language === 'en') ? 'block' : 'none';
+            document.getElementById('spanishContent').style.display = (language === 'es') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.webp" alt="Ramen2Roman Logo" width="150px">
+        <h1>Ramen2Roman</h1>
+        <div class="language-toggle">
+            <button onclick="switchLanguage('en')">English</button> | 
+            <button onclick="switchLanguage('es')">Español</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home / Inicio</a></li>
+                <li><a href="about.html">About Us / Sobre Nosotros</a></li>
+                <li><a href="menu.html">Menu / Menú</a></li>
+                <li><a href="contact.html">Contact / Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- English Content -->
+    <div id="englishContent" style="display: block;">
+        <main>
+            <section>
+                <h2>Welcome to Ramen2Roman</h2>
+                <p>Explore the fusion of Japanese ramen and Roman-inspired cuisine. Our dishes are crafted to bring the best of East and West.</p>
+            </section>
+            <section>
+                <h2>Our Specials</h2>
+                <p>Delight in unique creations such as Tonkotsu Carbonara and Shoyu Roman Pizza.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Spanish Content -->
+    <div id="spanishContent" style="display: none;">
+        <main>
+            <section>
+                <h2>Bienvenido a Ramen2Roman</h2>
+                <p>Descubre la fusión de ramen japonés y cocina inspirada en Roma. Nuestros platos están diseñados para traer lo mejor de Oriente y Occidente.</p>
+            </section>
+            <section>
+                <h2>Nuestras Especialidades</h2>
+                <p>Disfruta de creaciones únicas como Tonkotsu Carbonara y Shoyu Roman Pizza.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 Ramen2Roman</p>
+    </footer>
+</body>
+</html>
